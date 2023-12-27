@@ -43,7 +43,7 @@ public class UsersController : BaseApiController
 
         return Ok(users);
     }
-    
+
     [HttpGet("{username}")] 
     public async Task<ActionResult<MemberDto>> GetUser(string username)
     {
